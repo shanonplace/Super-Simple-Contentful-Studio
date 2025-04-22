@@ -1,36 +1,75 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎨 Stu-Stu-Studio
 
-## Getting Started
+Stu-Stu-Studio is a simple Next.js server-side application that serves as a reference implementation for integrating the Contentful Studio product. This project provides the most basic starting point, allowing you to build out custom components, design system tokens, and more as you go.
 
-First, run the development server:
+> **⚠️ Disclaimer:** This project is not created by or supported by Contentful. It is a community-driven reference implementation that anyone can use.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## ✨ Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- 🚀 Minimal setup to get started with Contentful Studio.
+- 🛠️ Fully customizable to suit your design and component needs.
+- 🌐 Built with Next.js for server-side rendering and scalability.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🏁 Getting Started
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Follow these steps to set up the Studio Experience:
 
-## Learn More
+1.  **📂 Clone the repository:**
 
-To learn more about Next.js, take a look at the following resources:
+    ```bash
+    git clone https://github.com/your-repo/stu-stu-studio.git
+    cd stu-stu-studio
+    ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2.  **📦 Install dependencies:**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+    ```bash
+    npm install
+    ```
 
-## Deploy on Vercel
+3.  **🔑 Set up environment variables:**
+    Create a `.env.local` file in the root directory and add the following:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+    ```env
+    CONTENTFUL_ACCESS_TOKEN=your_access_token
+    CONTENTFUL_SPACE=your_space_id
+    CONTENTFUL_ENVIRONMENT=your_environment_id
+    CONTENTFUL_EXPERIENCE_TYPE=your_experience_type
+    ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+    Alternatively, you can refer to the `env.sample` file in the root directory for an example of the required environment variables.
+
+4.  **▶️ Run the development server:**
+    ```bash
+    npm run dev
+    ```
+    Open [http://localhost:3000](http://localhost:3000) in your browser to see the app.
+
+## 🎨 Customization
+
+To customize Stu-Stu-Studio, you can add custom components, design system tokens, and other configurations by modifying the `studio-config.ts` file. This file contains commented sections that you can uncomment and adjust to suit your needs.
+
+### 🛠️ Steps to Customize:
+
+1. **📝 Open the `studio-config.ts` file:**
+   Locate the `studio-config.ts` file in the root directory of the project.
+
+2. **🔧 Uncomment and configure:**
+   Inside the file, you'll find commented sections for custom components, design system tokens, and other settings. Uncomment the relevant parts and update them as needed.
+
+3. **💾 Save and restart the development server:**
+   After making changes, save the file and restart the development server to see your customizations in action.
+
+By leveraging the flexibility of the `studio-config.ts` file, you can tailor the application to meet your specific requirements.
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to open issues or submit pull requests to improve this reference implementation.
+
+## 📜 License
+
+This project is open-source and available under the [MIT License](LICENSE).
+
+---
+
+🎉 Enjoy building with Stu-Stu-Studio!
