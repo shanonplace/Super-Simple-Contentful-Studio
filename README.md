@@ -1,6 +1,6 @@
-# 🎨 Stu-Stu-Studio
+# 🎨 Super-Simple-Contentful-Studio
 
-Stu-Stu-Studio is a simple Next.js server-side application that serves as a reference implementation for integrating the Contentful Studio product. This project provides the most basic starting point, allowing you to build out custom components, design system tokens, and more as you go.
+Super-Simple-Contentful-Studio is a simple Next.js server-side application that serves as a reference implementation for integrating the Contentful Studio product. This project provides the most basic starting point, allowing you to build out custom components, design system tokens, and more as you go.
 
 > **⚠️ Disclaimer:** This project is not created by or supported by Contentful. It is a community-driven reference implementation that anyone can use.
 
@@ -17,8 +17,8 @@ Follow these steps to set up the Studio Experience:
 1.  **📂 Clone the repository:**
 
     ```bash
-    git clone https://github.com/your-repo/stu-stu-studio.git
-    cd stu-stu-studio
+    git clone https://github.com/shanonplace/Super-Simple-Contentful-Studio.git
+    cd Super-Simple-Contentful-Studio.git
     ```
 
 2.  **📦 Install dependencies:**
@@ -47,7 +47,7 @@ Follow these steps to set up the Studio Experience:
 
 ## 🎨 Customization
 
-To customize Stu-Stu-Studio, you can add custom components, design system tokens, and other configurations by modifying the `studio-config.ts` file. This file contains commented sections that you can uncomment and adjust to suit your needs.
+To customize Super-Simple-Contentful-Studio, you can add custom components, design system tokens, and other configurations by modifying the `studio-config.ts` file. This file contains commented sections that you can uncomment and adjust to suit your needs.
 
 ### 🛠️ Steps to Customize:
 
@@ -72,4 +72,4 @@ This project is open-source and available under the [MIT License](LICENSE).
 
 ---
 
-🎉 Enjoy building with Stu-Stu-Studio!
+🎉 Enjoy building with Super-Simple-Contentful-Studio!
