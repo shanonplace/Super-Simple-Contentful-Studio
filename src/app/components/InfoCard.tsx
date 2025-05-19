@@ -2,7 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import "InfoCard.css"; // Import your CSS file for styles
+import "./InfoCard.css"; // Import your CSS file for styling
 
 interface InfoCardProps {
   title: string;

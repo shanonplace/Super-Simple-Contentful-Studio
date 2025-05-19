@@ -5,11 +5,11 @@ import {
 } from "@contentful/experiences-sdk-react";
 
 // Uncomment the following code to import custom components
-// import { Button } from "./components/Button";
-// import { InfoCard } from "./components/InfoCard";
-// import { Wistia } from "./components/Wistia";
+import { Button } from "./components/Button";
+import { InfoCard } from "./components/InfoCard";
+import { Wistia } from "./components/Wistia";
 
-defineComponents([]);
+//defineComponents([]);
 
 // Uncomment the following code to define custom components
 // defineComponents([
@@ -81,29 +81,27 @@ defineBreakpoints([]);
 // Uncomment the following code to define custom breakpoints
 // defineBreakpoints([
 //   {
-//     id: "test-desktop",
+//     id: "Mobile",
 //     query: "*",
-//     displayName: "All Sizes",
-//     displayIcon: "desktop",
-//     previewSize: "100%",
+//     displayName: "Mobile",
+//     displayIcon: "mobile",
+//     previewSize: "390px",
 //   },
 //   {
-//     id: "test-tablet",
+//     id: "Tablet",
 //     query: "<982px",
 //     displayName: "Tablet",
 //     displayIcon: "tablet",
 //     previewSize: "820px",
 //   },
 //   {
-//     id: "test-mobile",
+//     id: "Desktop",
 //     query: "<576px",
-//     displayName: "Mobile",
-//     displayIcon: "mobile",
-//     previewSize: "390px",
+//     displayName: "Desktop",
+//     displayIcon: "desktop",
+//     previewSize: "100%",
 //   },
 // ]);
-
-//defineDesignTokens([]);
 
 defineDesignTokens([]);
 
