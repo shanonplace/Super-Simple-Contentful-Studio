@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@contentful/experiences-sdk-react": "^1.36.0",
+    "@contentful/experiences-sdk-react": "^3.3.0",
     "@wistia/wistia-player-react": "^0.0.100",
     "contentful": "^11.2.2",
     "next": "^15.2.2-canary.2",

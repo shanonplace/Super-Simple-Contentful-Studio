@@ -33,11 +33,11 @@ export default async function AppPage({
 
   // extract the styles from the experience
   const stylesheet = experience ? detachExperienceStyles(experience) : null;
-  //console.log("stylesheet ==>", stylesheet);
+  console.log("stylesheet ==>", stylesheet);
 
   // experience currently needs to be stringified manually to be passed to the component
   const experienceJSON = experience ? JSON.stringify(experience) : null;
-  //console.log("experienceJSON ==>", JSON.stringify(experienceJSON, null, 2));
+  console.log("experienceJSON ==>", JSON.stringify(experienceJSON, null, 2));
 
   return (
     <main className="flex flex-col min-h-screen justify-between">

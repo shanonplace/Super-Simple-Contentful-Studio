@@ -10,7 +10,14 @@ interface ExperienceProps {
 }
 
 const Experience: React.FC<ExperienceProps> = ({ experienceJSON, locale }) => {
-  return <ExperienceRoot experience={experienceJSON} locale={locale} />;
+  // Only render ExperienceRoot if both props are valid
+  if (!experienceJSON || !locale) return null;
+
+  return (
+    <React.Suspense fallback={<div>Loading experience...</div>}>
+      <ExperienceRoot experience={experienceJSON} locale={locale} />
+    </React.Suspense>
+  );
 };
 
 export default Experience;
