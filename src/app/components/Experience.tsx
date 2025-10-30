@@ -10,6 +10,7 @@ interface ExperienceProps {
 }
 
 const Experience: React.FC<ExperienceProps> = ({ experienceJSON, locale }) => {
+  console.log("here");
   // Only render ExperienceRoot if both props are valid
   if (!experienceJSON || !locale) return null;
 

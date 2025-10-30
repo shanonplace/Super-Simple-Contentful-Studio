@@ -8,8 +8,9 @@ import {
 import { Button } from "./components/Button";
 import { InfoCard } from "./components/InfoCard";
 import { Wistia } from "./components/Wistia";
+import MarkdownContent from "./components/MarkdownContent";
 
-//defineComponents([]);
+defineComponents([]);
 
 console.log(
   `Registering Defined components: ${Button.name}, ${InfoCard.name}, ${Wistia.name}`
@@ -77,34 +78,49 @@ defineComponents([
       },
     },
   },
+  {
+    component: MarkdownContent,
+    definition: {
+      id: "markdown-content",
+      name: "Markdown Content",
+      category: "Custom Components",
+      variables: {
+        markdownText: {
+          displayName: "Markdown Text",
+          type: "Text",
+          defaultValue: "# Hello World!\nThis is **markdown**.",
+        },
+      },
+    },
+  },
 ]);
 
-defineBreakpoints([]);
+// defineBreakpoints([]);
 
 // Uncomment the following code to define custom breakpoints
-// defineBreakpoints([
-//   {
-//     id: "Mobile",
-//     query: "*",
-//     displayName: "Mobile",
-//     displayIcon: "mobile",
-//     previewSize: "390px",
-//   },
-//   {
-//     id: "Tablet",
-//     query: "<982px",
-//     displayName: "Tablet",
-//     displayIcon: "tablet",
-//     previewSize: "820px",
-//   },
-//   {
-//     id: "Desktop",
-//     query: "<576px",
-//     displayName: "Desktop",
-//     displayIcon: "desktop",
-//     previewSize: "100%",
-//   },
-// ]);
+defineBreakpoints([
+  {
+    id: "mobile",
+    query: "*",
+    displayName: "All Sizes",
+    displayIcon: "mobile",
+    previewSize: "390px",
+  },
+  {
+    id: "tablet",
+    query: ">576px",
+    displayName: "Tablet",
+    displayIcon: "tablet",
+    previewSize: "820px",
+  },
+  {
+    id: "desktop",
+    query: ">992px",
+    displayName: "Desktop",
+    displayIcon: "desktop",
+    previewSize: "100%",
+  },
+]);
 
 //defineDesignTokens([]);
 
