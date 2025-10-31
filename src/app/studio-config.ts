@@ -100,25 +100,46 @@ defineComponents([
 // Uncomment the following code to define custom breakpoints
 defineBreakpoints([
   {
-    id: "mobile",
+    id: "XS",
     query: "*",
-    displayName: "All Sizes",
+    displayName: "XS (Mobile)",
     displayIcon: "mobile",
-    previewSize: "390px",
+    previewSize: "375px",
   },
   {
-    id: "tablet",
-    query: ">576px",
-    displayName: "Tablet",
+    id: "S",
+    query: ">768px",
+    displayName: "S (Tablet)",
     displayIcon: "tablet",
-    previewSize: "820px",
+    previewSize: "768px",
   },
   {
-    id: "desktop",
+    id: "M",
     query: ">992px",
-    displayName: "Desktop",
+    displayName: "M (Small Desktop)",
     displayIcon: "desktop",
-    previewSize: "100%",
+    previewSize: "992px",
+  },
+  {
+    id: "L",
+    query: ">1200px",
+    displayName: "L (Desktop)",
+    displayIcon: "desktop",
+    previewSize: "1200px",
+  },
+  {
+    id: "XL",
+    query: ">1366px",
+    displayName: "XL (Large iPad)",
+    displayIcon: "tablet",
+    previewSize: "1366px",
+  },
+  {
+    id: "XXL",
+    query: ">1600px",
+    displayName: "XXL (Large Desktop)",
+    displayIcon: "desktop",
+    previewSize: "1600px",
   },
 ]);
 
