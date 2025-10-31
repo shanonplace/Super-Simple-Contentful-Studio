@@ -9,6 +9,7 @@ import { Button } from "./components/Button";
 import { InfoCard } from "./components/InfoCard";
 import { Wistia } from "./components/Wistia";
 import MarkdownContent from "./components/MarkdownContent";
+import MarkdownContentBreakpoint from "./components/MarkdownContentBreakpoint";
 
 defineComponents([]);
 
@@ -87,6 +88,21 @@ defineComponents([
       variables: {
         markdownText: {
           displayName: "Markdown Text",
+          type: "Text",
+          defaultValue: "# Hello World!\nThis is **markdown**.",
+        },
+      },
+    },
+  },
+  {
+    component: MarkdownContentBreakpoint,
+    definition: {
+      id: "markdown-content-breakpoint",
+      name: "Markdown Content Breakpoint",
+      category: "Custom Components",
+      variables: {
+        markdownText: {
+          displayName: "Markdown Text with breakpoint awareness",
           type: "Text",
           defaultValue: "# Hello World!\nThis is **markdown**.",
         },
